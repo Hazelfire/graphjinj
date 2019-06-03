@@ -1,0 +1,17 @@
+<query>
+{
+  allTasks {
+    edges {
+      node {
+        id
+        name
+      }
+    }
+  }
+}
+</query>
+<display>
+{% for task in data.allTasks.edges %}
+  {{ task.node.name }}
+{% endfor %}
+</display>
