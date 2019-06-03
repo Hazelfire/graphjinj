@@ -39,5 +39,5 @@ def test_graphjinj():
         read_text("test.examples", "getTasks.gjinj"),
         session=session
     )
-    assert "task1" in result
-    assert "task2" in result
+    assert "task1" in result.display
+    assert "task2" in result.display
